@@ -1,7 +1,7 @@
 package command
 
 import (
-	"github.com/mace-codes/go-keelson/internal/customer/application/command/ports"
+	"github.com/mace-codes/go-keelson/examples/basic/internal/customer/application/command/ports"
 )
 
 type customerCommandHandler struct {

@@ -3,7 +3,7 @@ package rest
 import (
 	"net/http"
 
-	"github.com/mace-codes/go-keelson/internal/customer/interface/ports"
+	"github.com/mace-codes/go-keelson/examples/basic/internal/customer/interface/ports"
 )
 
 // CreateCustomerProfile handles the creation of a new customer profile.

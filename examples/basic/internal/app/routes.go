@@ -2,7 +2,7 @@ package app
 
 import (
 	transport "github.com/mace-codes/go-keelson-transport"
-	cstRest "github.com/mace-codes/go-keelson/internal/customer/interface/rest"
+	cstRest "github.com/mace-codes/go-keelson/examples/basic/internal/customer/interface/rest"
 )
 
 // serveRoutes takes in route groups exported by the rest interface of bounded contexts

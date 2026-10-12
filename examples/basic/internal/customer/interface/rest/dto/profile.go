@@ -1,7 +1,7 @@
 package dto
 
 import (
-	"github.com/mace-codes/go-keelson/domain/customer"
+	"github.com/mace-codes/go-keelson/examples/basic/domain/customer"
 )
 
 // Profile represents the data transfer object for a customer profile.

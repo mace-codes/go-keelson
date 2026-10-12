@@ -1,7 +1,7 @@
-package service
+package main
 
 import (
-	"github.com/mace-codes/go-keelson/internal/app"
+	"github.com/mace-codes/go-keelson/examples/basic/internal/app"
 	"go.uber.org/zap"
 )
 

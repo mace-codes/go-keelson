@@ -1,7 +1,7 @@
 package customer
 
 import (
-	"github.com/mace-codes/go-keelson/domain/common"
+	"github.com/mace-codes/go-keelson/examples/basic/domain/common"
 )
 
 // UnvalidatedProfile represents a customer profile that has not been validated yet.
