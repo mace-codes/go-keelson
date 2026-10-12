@@ -1,6 +1,6 @@
 package query
 
-import "github.com/mace-codes/go-keelson/internal/customer/application/query/ports"
+import "github.com/mace-codes/go-keelson/examples/basic/internal/customer/application/query/ports"
 
 type customerQueryHandler struct {
 	getCustomerProfileByID ports.ForGettingCustomerProfileByID

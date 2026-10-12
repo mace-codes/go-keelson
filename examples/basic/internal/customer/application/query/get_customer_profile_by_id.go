@@ -1,8 +1,8 @@
 package query
 
 import (
-	"github.com/mace-codes/go-keelson/domain/customer"
-	"github.com/mace-codes/go-keelson/internal/customer/interface/ports"
+	"github.com/mace-codes/go-keelson/examples/basic/domain/customer"
+	"github.com/mace-codes/go-keelson/examples/basic/internal/customer/interface/ports"
 )
 
 // Ensure that customerQueryHandler implements the ForGettingCustomerProfileByID interface.

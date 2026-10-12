@@ -7,13 +7,14 @@ import (
 	"github.com/go-chi/cors"
 	"github.com/joho/godotenv"
 	"github.com/mace-codes/go-keelson-transport/utils/logger/zaplog"
-	"github.com/mace-codes/go-keelson/internal/app/config"
+	"github.com/mace-codes/go-keelson/examples/basic/internal/app/config"
+	"go.uber.org/zap"
 
 	transport "github.com/mace-codes/go-keelson-transport"
 )
 
 func Run() error {
-	godotenv.Load() // Load environment variables from .env file
+	_ = godotenv.Load(".env") // Load environment variables from .env file
 
 	cfg, err := config.Load() // Load configuration from environment variables
 	if err != nil {
@@ -24,6 +25,7 @@ func Run() error {
 	if err != nil {
 		return err
 	}
+	defer deps.logger.Sync()
 
 	// Start all startable dependencies
 	for _, s := range deps.startables {
@@ -37,7 +39,7 @@ func Run() error {
 		for _, s := range deps.stopables {
 			if err := s.Stop(); err != nil {
 				// Log the error but continue stopping other dependencies
-				// You can use a logger here to log the error
+				deps.logger.Error("Failed to stop dependency", zap.Error(err))
 			}
 		}
 	}()

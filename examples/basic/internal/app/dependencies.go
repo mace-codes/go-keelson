@@ -3,14 +3,14 @@ package app
 import (
 	"context"
 
-	"github.com/mace-codes/go-keelson/domain/customer"
-	"github.com/mace-codes/go-keelson/internal/app/config"
+	"github.com/mace-codes/go-keelson/examples/basic/domain/customer"
+	"github.com/mace-codes/go-keelson/examples/basic/internal/app/config"
 	"go.uber.org/zap"
 
 	transport "github.com/mace-codes/go-keelson-transport"
-	cstCmd "github.com/mace-codes/go-keelson/internal/customer/application/command"
-	cstQry "github.com/mace-codes/go-keelson/internal/customer/application/query"
-	cstRest "github.com/mace-codes/go-keelson/internal/customer/interface/rest"
+	cstCmd "github.com/mace-codes/go-keelson/examples/basic/internal/customer/application/command"
+	cstQry "github.com/mace-codes/go-keelson/examples/basic/internal/customer/application/query"
+	cstRest "github.com/mace-codes/go-keelson/examples/basic/internal/customer/interface/rest"
 )
 
 // NoOps used for now, but you can replace it with actual implementations as needed.

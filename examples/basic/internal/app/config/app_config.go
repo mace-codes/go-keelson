@@ -17,7 +17,7 @@ type Config struct {
 }
 
 // Validate checks if c is a valid Config instance. It returns an error if any required fields are missing or invalid.
-func (c *Config) Validate() error {
+func (c Config) Validate() error {
 	return validation.ValidateStruct(&c,
 		validation.Field(&c.ServiceName, validation.Required),
 		validation.Field(&c.Env, validation.Required, validation.In(EnvLocal, EnvDevelopment, EnvStaging, EnvTest, EnvProduction)),

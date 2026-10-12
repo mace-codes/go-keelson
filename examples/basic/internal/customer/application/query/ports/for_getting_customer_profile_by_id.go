@@ -1,6 +1,6 @@
 package ports
 
-import "github.com/mace-codes/go-keelson/domain/customer"
+import "github.com/mace-codes/go-keelson/examples/basic/domain/customer"
 
 // ForGettingCustomerProfileByID defines the driven port for getting a customer profile by ID.
 type ForGettingCustomerProfileByID func(customer.ID) (customer.Profile, error)

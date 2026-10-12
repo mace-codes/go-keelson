@@ -1,4 +1,4 @@
-module github.com/mace-codes/go-keelson
+module github.com/mace-codes/go-keelson/examples/basic
 
 go 1.27.1
 
